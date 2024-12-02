@@ -30,15 +30,29 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 /* write all the steps invloved */
 
+1.Open quartus II and create New project wizard.           
+2. Write the program in Verilog HDL file and run the program.           
+3. Download the RTL viewer.       
+4. Now open university program VWF and download waveform after the execution.
+
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+/* Program for flipflops and verify its truth table in quartus using Verilog programming.       
+
+module EXP_8(D,clk,Q,Qbar); input D,clk; output reg Q; output reg Qbar; initial Q=0; initial Qbar=1; always @(posedge clk) begin Q=D; Qbar=~D; end endmodule
+
+Developed by: RegisterNumber:
+*/24005701
 
 **RTL LOGIC FOR FLIPFLOPS**
 
+![389171564-d1dcf184-6e4a-4534-8637-f109b5d12b2f](https://github.com/user-attachments/assets/9163a323-dbdc-4c2c-bf41-191d3f05100a)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
+![389171600-778ed455-59f2-46da-a528-cd2849cc5f38](https://github.com/user-attachments/assets/f21cec5d-92a9-4d41-b6b1-ac5bc022fe92)
+
 
 **RESULTS**
+
+Thus the D flip flop is executed in Quartus and output is verified.
